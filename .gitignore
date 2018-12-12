@@ -1,0 +1,5 @@
+*.tar.gz
+*.tar.zip
+6.*
+current
+stack-download
