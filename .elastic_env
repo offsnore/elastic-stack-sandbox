@@ -1,4 +1,4 @@
-alias reportgen="rm -f report.pdf && reportgen -i report.md -o report.pdf && open report.pdf"
+
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 alias lsb='git branch | cat'
 alias lsg='git status | cat'
@@ -17,7 +17,7 @@ alias vizshrc="vi ~/.zshrc"
 alias vifilebeatyml="vi ~/workspace/elastic-stack/current/filebeat/filebeat.yml"
 alias sshtesla-stack='gcloud compute --project "elastic-consulting" ssh --zone "us-central1-c" "andrew-tesla-stack"'
 
-alias vish="vi ~/.zshrc"
+
 alias vilogstashconf="vi ~/workspace/elastic-stack/current/logstash/config/logstash-current.conf"
 alias startlogstash="~/workspace/tesla-stack/ingest-ops/start-logstash.sh"
 export LOGSTASH_CONF=/Users/andrew/workspace/tesla-stack/logstash-configs
@@ -60,11 +60,6 @@ alias checklogstashpids="ls -al /var/run/logstash/pid*"
 alias checkfbpids="ls -al /var/run/filebeat/pid*"
 alias checkfilebeatpids="ls -al /var/run/filebeat/pid*"
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/andrew/scratch/google-cloud-sdk 1/path.zsh.inc' ]; then . '/Users/andrew/scratch/google-cloud-sdk 1/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/andrew/scratch/google-cloud-sdk 1/completion.zsh.inc' ]; then . '/Users/andrew/scratch/google-cloud-sdk 1/completion.zsh.inc'; fi
 export LOGSTASH_CONFIG_FILE="logstash-quickpivot.conf"
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
