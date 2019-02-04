@@ -1,5 +1,7 @@
+# Uncomment the `6` and `current` lines to commit deployed instance repo
 *.tar.gz
 *.tar.zip
 6.*
 current
-stack-download
+stack-download*
+minio

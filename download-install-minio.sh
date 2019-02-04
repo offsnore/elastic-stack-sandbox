@@ -7,7 +7,7 @@ chmod +x minio
 
 cd ..
 sudo mkdir /var/run/filebeat/
-sudo chown -Rf andrew:staff /var/run/filebeat
+sudo chown -Rf andrew:andrew /var/run/filebeat
 
 # Minio
 cd

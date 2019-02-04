@@ -1,8 +1,8 @@
 # Remove `current` symlink
 cd
 cd workspace/elastic-stack
-rm current
+rm -f current
 # Move stack downloaded to the verion folder
-mv stack-download $ES_STACK_VERSION
+#mv stack-download $ES_STACK_VERSION
 # Create new `current` symlink
-ln -s $ES_STACK_VERSION current
+ln -s stack-download-$ES_STACK_VERSION current
