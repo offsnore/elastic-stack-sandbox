@@ -1,6 +1,19 @@
 #!/bin/bash
 
+~/workspace/elastic-stack/clear-symlinks.sh
+
 cd
+
+#TODO Prompt for ES_STACK_VERSION if not set
+if [ ! -z $1 ]; then
+  ES_STACK_VERSION=$1
+fi
+if [ -z "$ES_STACK_VERSION" ]; then
+  read -p  "Enter stack version (latest from http://elastic.co/downloads): " ES_STACK_VERSION
+fi
+echo ES Stack version to install: $ES_STACK_VERSION
+OS=linux
+BUILD=x86_64
 cd ~/workspace/elastic-stack/stack-download-$ES_STACK_VERSION
 
 # Ceate Symlinks
